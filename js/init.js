@@ -1,50 +1,96 @@
-$("body").mousemove(function (e) {
-  var eye = $(".eye");
-  var x = eye.offset().left + eye.width() / 2;
-  var y = eye.offset().top + eye.height() / 2;
-  var rad = Math.atan2(e.pageX - x, e.pageY - y);
-  var rot = rad * (180 / Math.PI) * -1 + 900;
-  eye.css({
-    "-webkit-transform": "rotate(" + rot + "deg)",
-    "-moz-transform": "rotate(" + rot + "deg)",
-    "-ms-transform": "rotate(" + rot + "deg)",
-    transform: "rotate(" + rot + "deg)",
-  });
-});
-
+$(".hitbox").hover(
+  function () {
+    var eyes = $(".eye");
+    console.log(this.id);
+    if (this.id == "nw") {
+      eyes.css({
+        "-webkit-transform": " translate(-15px, -10px)",
+        transform: " translate(-15px, -10px)",
+      });
+    }
+    if (this.id == "n") {
+      eyes.css({
+        "-webkit-transform": " translate(0, -10px)",
+        transform: " translate(0, -10px)",
+      });
+    }
+    if (this.id == "ne") {
+      eyes.css({
+        "-webkit-transform": " translate(15px, -10px)",
+        transform: " translate(15px, -10px)",
+      });
+    }
+    if (this.id == "w") {
+      eyes.css({
+        "-webkit-transform": " translate(-15px, 0)",
+        transform: " translate(-15px, 0)",
+      });
+    }
+    if (this.id == "e") {
+      eyes.css({
+        "-webkit-transform": " translate(15px, 0)",
+        transform: " translate(15px, 0)",
+      });
+    }
+    if (this.id == "sw") {
+      eyes.css({
+        "-webkit-transform": " translate(-15px, 10px)",
+        transform: " translate(-15px, 10px)",
+      });
+    }
+    if (this.id == "s") {
+      eyes.css({
+        "-webkit-transform": " translate(0, 10px)",
+        transform: " translate(0, 10px)",
+      });
+    }
+    if (this.id == "se") {
+      eyes.css({
+        "-webkit-transform": " translate(15px, 10px)",
+        transform: " translate(15px, 10px)",
+      });
+    }
+  },
+  function () {
+    $(".eye").css({
+      "-webkit-transform": "none",
+      transform: "none",
+    });
+  }
+);
 particlesJS("particles-js", {
   particles: {
     number: {
-      value: 563,
-      density: { enable: false, value_area: 8097.23090737089 },
+      value: 250,
+      density: { enable: true, value_area: 3235.5053306923182 },
     },
     color: { value: "#ffffff" },
     shape: {
       type: "circle",
       stroke: { width: 0, color: "#000000" },
-      polygon: { nb_sides: 5 },
+      polygon: { nb_sides: 9 },
       image: { src: "img/github.svg", width: 100, height: 100 },
     },
     opacity: {
-      value: 0.5,
-      random: false,
+      value: 0.7672327672327672,
+      random: true,
       anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false },
     },
     size: {
-      value: 3,
+      value: 28.05971106514665,
       random: true,
       anim: { enable: false, speed: 40, size_min: 0.1, sync: false },
     },
     line_linked: {
-      enable: false,
-      distance: 1603.412060865523,
+      enable: true,
+      distance: 111.8881118881119,
       color: "#ffffff",
       opacity: 0.4,
-      width: 20,
+      width: 1,
     },
     move: {
       enable: true,
-      speed: 1.5,
+      speed: 1,
       direction: "none",
       random: true,
       straight: false,
