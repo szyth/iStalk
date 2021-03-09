@@ -1,31 +1,10 @@
 body {
     height: 100vh;
-    background-color: #444;
+    background: #002F5E;
+    background: -webkit-radial-gradient(center, #002F5E, #1C1C1C);
+    background: -moz-radial-gradient(center, #002F5E, #1C1C1C);
+    background: radial-gradient(ellipse at center, #002F5E, #1C1C1C);
 }
-
-.eye {
-    top: -150px;
-    position: relative;
-    display: inline-block;
-    margin: 10px;
-    border-radius: 50%;
-    height: 100px;
-    width: 100px;
-    background: #CCC;
-}
-
-.eye:after {
-    /*pupil*/
-    position: absolute;
-    bottom: 17px;
-    right: 10px;
-    width: 30px;
-    height: 30px;
-    background: #000;
-    border-radius: 50%;
-    content: " ";
-}
-
 
 
 /* ---- particles.js container ---- */
@@ -38,4 +17,51 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
+}
+
+#svg-container {
+    position: relative;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    min-height: 100vh;
+}
+
+#face {
+    position: absolute;
+    z-index: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#eyes {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -100%);
+    z-index: -1;
+}
+
+.eye {
+    top: 0;
+    position: relative;
+    display: inline-block;
+    margin: 0 30px;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background: #002F5E;
+}
+
+.eye:after {
+    /*pupil*/
+    position: absolute;
+    bottom: 17px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    background: rgb(250, 17, 0);
+    border-radius: 50%;
+    content: " ";
 }
