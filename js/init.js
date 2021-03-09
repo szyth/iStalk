@@ -4,50 +4,50 @@ $(".hitbox").hover(
     console.log(this.id);
     if (this.id == "nw") {
       eyes.css({
-        "-webkit-transform": " translate(-15px, -10px)",
-        transform: " translate(-15px, -10px)",
+        "-webkit-transform": " translate(-10px, -5px)",
+        transform: " translate(-10px, -5px)",
       });
     }
     if (this.id == "n") {
       eyes.css({
-        "-webkit-transform": " translate(0, -10px)",
-        transform: " translate(0, -10px)",
+        "-webkit-transform": " translate(0, -5px)",
+        transform: " translate(0, -5px)",
       });
     }
     if (this.id == "ne") {
       eyes.css({
-        "-webkit-transform": " translate(15px, -10px)",
-        transform: " translate(15px, -10px)",
+        "-webkit-transform": " translate(10px, -5px)",
+        transform: " translate(10px, -5px)",
       });
     }
     if (this.id == "w") {
       eyes.css({
-        "-webkit-transform": " translate(-15px, 0)",
-        transform: " translate(-15px, 0)",
+        "-webkit-transform": " translate(-10px, 0)",
+        transform: " translate(-10px, 0)",
       });
     }
     if (this.id == "e") {
       eyes.css({
-        "-webkit-transform": " translate(15px, 0)",
-        transform: " translate(15px, 0)",
+        "-webkit-transform": " translate(10px, 0)",
+        transform: " translate(10px, 0)",
       });
     }
     if (this.id == "sw") {
       eyes.css({
-        "-webkit-transform": " translate(-15px, 10px)",
-        transform: " translate(-15px, 10px)",
+        "-webkit-transform": " translate(-10px, 5px)",
+        transform: " translate(-10px, 5px)",
       });
     }
     if (this.id == "s") {
       eyes.css({
-        "-webkit-transform": " translate(0, 10px)",
-        transform: " translate(0, 10px)",
+        "-webkit-transform": " translate(0, 5px)",
+        transform: " translate(0, 5px)",
       });
     }
     if (this.id == "se") {
       eyes.css({
-        "-webkit-transform": " translate(15px, 10px)",
-        transform: " translate(15px, 10px)",
+        "-webkit-transform": " translate(10px, 5px)",
+        transform: " translate(10px, 5px)",
       });
     }
   },
