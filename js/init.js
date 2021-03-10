@@ -4,8 +4,8 @@ $(".hitbox").hover(
     // console.log(this.id);
     if (this.id == "nw") {
       eyes.css({
-        "-webkit-transform": " translate(-10px, -5px)",
-        transform: " translate(-10px, -5px)",
+        "-webkit-transform": " translate(-5px, -5px)",
+        transform: " translate(-5px, -5px)",
       });
     }
     if (this.id == "n") {
@@ -16,26 +16,26 @@ $(".hitbox").hover(
     }
     if (this.id == "ne") {
       eyes.css({
-        "-webkit-transform": " translate(10px, -5px)",
-        transform: " translate(10px, -5px)",
+        "-webkit-transform": " translate(5px, -5px)",
+        transform: " translate(5px, -5px)",
       });
     }
     if (this.id == "w") {
       eyes.css({
-        "-webkit-transform": " translate(-10px, 0)",
-        transform: " translate(-10px, 0)",
+        "-webkit-transform": " translate(-5px, 0)",
+        transform: " translate(-5px, 0)",
       });
     }
     if (this.id == "e") {
       eyes.css({
-        "-webkit-transform": " translate(10px, 0)",
-        transform: " translate(10px, 0)",
+        "-webkit-transform": " translate(5px, 0)",
+        transform: " translate(5px, 0)",
       });
     }
     if (this.id == "sw") {
       eyes.css({
-        "-webkit-transform": " translate(-10px, 5px)",
-        transform: " translate(-10px, 5px)",
+        "-webkit-transform": " translate(-5px, 5px)",
+        transform: " translate(-5px, 5px)",
       });
     }
     if (this.id == "s") {
@@ -46,8 +46,8 @@ $(".hitbox").hover(
     }
     if (this.id == "se") {
       eyes.css({
-        "-webkit-transform": " translate(10px, 5px)",
-        transform: " translate(10px, 5px)",
+        "-webkit-transform": " translate(5px, 5px)",
+        transform: " translate(5px, 5px)",
       });
     }
   },
@@ -58,58 +58,109 @@ $(".hitbox").hover(
     });
   }
 );
-$("#nw").hover(
-  function () {
-    $(".web").animate({ opacity: "toggle", height: "toggle" }, 400, "swing");
-    $("#nw .star").fadeToggle(100);
 
+$("#moon-1").hover(
+  function () {
+    $(".eye").css({
+      "-webkit-transform": " translate(-5px, 0)",
+      transform: " translate(-5px, 0)",
+    });
+    var x = $("#moon-1").offset().left;
+    var y = $("#moon-1").offset().top;
+    $(".app").css({
+      left: x + "px",
+      top: y + "px",
+    });
+    $("h3.glitch.app").fadeToggle(200);
   },
   function () {
-    $(".web").fadeToggle();
-    $("#nw .star").fadeToggle(100);
+    $("h3.glitch.app").fadeToggle();
   }
 );
-$("#n").hover(
+$("#moon-2").hover(
   function () {
-    $(".seo").animate({ opacity: "toggle", height: "toggle" }, 400, "swing");
-    $("#n .star").fadeToggle(100);
-  },
-  function () {
-    $(".seo").fadeToggle();
-    $("#n .star").fadeToggle(100);
-  }
-);
-$("#ne").hover(
-  function () {
-    $(".smm").animate({ opacity: "toggle", height: "toggle" }, 400, "swing");
-    $("#ne .star").fadeToggle(100);
-  },
-  function () {
-    $(".smm").fadeToggle();
-    $("#ne .star").fadeToggle(100);
-  }
-);
-$("#e").hover(
-  function () {
-    $(".app").animate({ opacity: "toggle", height: "toggle" }, 400, "swing");
-    $("#e .star").fadeToggle(100);
-  },
-  function () {
-    $(".app").fadeToggle();
-    $("#e .star").fadeToggle(100);
-  }
-);
-$("#w").hover(
-  function () {
-    $(".sw").animate({ opacity: "toggle", height: "toggle" }, 400, "swing");
-    $("#w .star").fadeToggle(100);
-  },
-  function () {
-    $(".sw").fadeToggle();
-    $("#w .star").fadeToggle(100);
-  }
-);
+    $(".eye").css({
+      "-webkit-transform": " translate(-5px, -5px)",
+      transform: " translate(-5px, -5px)",
+    });
+    var x = $("#moon-2").offset().left;
+    var y = $("#moon-2").offset().top;
 
+    $(".web").css({
+      left: x + "px",
+      top: y + "px",
+    });
+    $("h3.glitch.web").fadeToggle(200);
+
+    console.log(x + " : " + y);
+  },
+  function () {
+    $("h3.glitch.web").fadeToggle();
+  }
+);
+$("#moon-3").hover(
+  function () {
+    $(".eye").css({
+      "-webkit-transform": " translate(0, -5px)",
+      transform: " translate(0, -5px)",
+    });
+    var x = $("#moon-3").offset().left;
+    var y = $("#moon-3").offset().top;
+
+    $(".seo").css({
+      left: x + "px",
+      top: y + "px",
+    });
+    $("h3.glitch.seo").fadeToggle(200);
+
+    console.log(x + " : " + y);
+  },
+  function () {
+    $("h3.glitch.seo").fadeToggle();
+  }
+);
+$("#moon-4").hover(
+  function () {
+    $(".eye").css({
+      "-webkit-transform": " translate(5px, -5px)",
+      transform: " translate(5px, -5px)",
+    });
+    var x = $("#moon-4").offset().left;
+    var y = $("#moon-4").offset().top;
+
+    $(".smm").css({
+      left: x + "px",
+      top: y + "px",
+    });
+    $("h3.glitch.smm").fadeToggle(200);
+
+    console.log(x + " : " + y);
+  },
+  function () {
+    $("h3.glitch.smm").fadeToggle();
+  }
+);
+$("#moon-5").hover(
+  function () {
+    $(".eye").css({
+      "-webkit-transform": " translate(5px, 0)",
+      transform: " translate(5px, 0)",
+    });
+    var x = $("#moon-5").offset().left;
+    var y = $("#moon-5").offset().top;
+
+    $(".sw").css({
+      left: x + "px",
+      top: y + "px",
+    });
+    $("h3.glitch.sw").fadeToggle(200);
+
+    console.log(x + " : " + y);
+  },
+  function () {
+    $("h3.glitch.sw").fadeToggle();
+  }
+);
 //mousemove parallax
 (function () {
   // Add event listener
@@ -131,7 +182,6 @@ $("#w").hover(
       50 + (_mouseY - _h) * 0.013
     }%`;
     let x = `${_depth3}, ${_depth2}, ${_depth1}`;
-    console.log(x);
     elem.style.backgroundPosition = x;
   }
 })();

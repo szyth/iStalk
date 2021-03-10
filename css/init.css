@@ -14,6 +14,7 @@ body {
 
 nav {
     margin: 10px 0;
+    position: absolute;
 }
 
 /* ---- particles.js container ---- */
@@ -29,7 +30,8 @@ nav {
 
 #svg-container {
     position: relative;
-    width: 80%;
+    top: 10%;
+    width: 75%;
     left: 50%;
     transform: translateX(-50%);
     min-height: 100vh;
@@ -38,108 +40,68 @@ nav {
 .hit-area {
     position: absolute;
     left: 50%;
-    transform: translate(-50%, -50%);
     top: 50%;
-    width: 600px;
-    height: 600px;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 90vh;
     margin: 0 auto;
-    z-index: 99999;
+    z-index: 9999;
 }
 
-.hitbox {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    float: left;
-    vertical-align: middle;
-}
-
-.star-wrapper {
+#moon {
     position: absolute;
     left: 50%;
-    transform: translate(-50%, -90%);
     top: 50%;
-    display: block;
-}
-
-
-/* star  */
-
-.star {
-    position: relative;
-    display: inline-block;
-    width: 0;
-    height: 0;
-    margin-left: 0.9em;
-    margin-right: 0.9em;
-    margin-bottom: 1.2em;
-    border-right: 0.3em solid transparent;
-    border-bottom: 0.7em solid rgb(253, 246, 219);
-    border-left: 0.3em solid transparent;
-    /* Controlls the size of the stars. */
-    font-size: 1rem;
-}
-
-.star:before,
-.star:after {
-    content: "";
-    display: block;
-    width: 0;
-    height: 0;
-    position: absolute;
-    top: 0.6em;
-    left: -1em;
-    border-right: 1em solid transparent;
-    border-bottom: 0.7em solid rgb(255, 255, 255);
-    border-left: 1em solid transparent;
-    transform: rotate(-35deg);
-}
-
-.star:after {
-    transform: rotate(35deg);
-}
-.hitbox h3 {
-    color: white;
-    background-color: rgb(7, 7, 7);
-    font-size: 1.3rem;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
-}
-
-.web,
-.app,
-.sw,
-.smm,
-.seo {
-    display: none;
-
+    transform: translate(-50%, -50%);
+    z-index: 99999;
 }
 
 #face {
     position: absolute;
-    z-index: 9999;
+    z-index: 999;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
-
 
 .svg-eye {
-    fill: #ecdddd;
+    fill: #ffffff;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    z-index: 999;
+    z-index: 99;
 }
 
-/* #face-net {
+.hitbox {
+    position: relative;
+    width: 33%;
+    height: 30vh;
+    float: left;
+    vertical-align: middle;
+}
+
+
+
+h3.glitch {
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 999999;
-} */
+    color: white;
+    background-color: rgb(7, 7, 7);
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+.app,
+.sw,
+.smm,
+.seo,
+.web {
+    display: none;
+    z-index: 99999;
+    position: absolute;
+
+}
 
 .eye {
     transition: transform 1s ease;
@@ -436,7 +398,7 @@ nav {
     top: 0;
     z-index: -1;
     width: 100%;
-    height: 120vh;
+    height: 100vh;
     background-image: url('../media/polygon/1.png'), url('../media/polygon/2.png'), url('../media/star.jpg');
     background-repeat: no-repeat;
     background-position: center;
