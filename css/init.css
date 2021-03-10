@@ -5,10 +5,11 @@
 
 body {
     height: 100vh;
-    background: #002F5E;
+    /* background: #002F5E;
     background: -webkit-radial-gradient(center, #002F5E, #1C1C1C);
     background: -moz-radial-gradient(center, #002F5E, #1C1C1C);
-    background: radial-gradient(ellipse at center, #002F5E, #1C1C1C);
+    background: radial-gradient(ellipse at center, #002F5E, #1C1C1C); */
+    background: transparent;
 }
 
 nav {
@@ -19,7 +20,7 @@ nav {
 #particles-js {
     position: absolute;
     width: 100%;
-    height: 120vh;
+    height: 100vh;
     background-image: url("");
     background-repeat: no-repeat;
     background-size: cover;
@@ -46,12 +47,57 @@ nav {
 }
 
 .hitbox {
+    position: relative;
     width: 200px;
     height: 200px;
     float: left;
     vertical-align: middle;
 }
 
+.star-wrapper {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -90%);
+    top: 50%;
+    display: block;
+}
+
+
+/* star  */
+
+.star {
+    position: relative;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 0.9em;
+    margin-right: 0.9em;
+    margin-bottom: 1.2em;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0.7em solid rgb(253, 246, 219);
+    border-left: 0.3em solid transparent;
+    /* Controlls the size of the stars. */
+    font-size: 1rem;
+}
+
+.star:before,
+.star:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0.6em;
+    left: -1em;
+    border-right: 1em solid transparent;
+    border-bottom: 0.7em solid rgb(255, 255, 255);
+    border-left: 1em solid transparent;
+    transform: rotate(-35deg);
+}
+
+.star:after {
+    transform: rotate(35deg);
+}
 .hitbox h3 {
     color: white;
     background-color: rgb(7, 7, 7);
@@ -60,9 +106,18 @@ nav {
     font-weight: 900;
 }
 
+.web,
+.app,
+.sw,
+.smm,
+.seo {
+    display: none;
+
+}
+
 #face {
     position: absolute;
-    z-index: 0;
+    z-index: 9999;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -70,12 +125,12 @@ nav {
 
 
 .svg-eye {
-    fill: #dce4eec4;
+    fill: #ecdddd;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    z-index: 1;
+    z-index: 999;
 }
 
 /* #face-net {
@@ -87,7 +142,7 @@ nav {
 } */
 
 .eye {
-    transition: transform 1.5s ease;
+    transition: transform 1s ease;
 }
 
 
@@ -117,21 +172,25 @@ nav {
     content: "Web Development";
 
 }
+
 .glitch.seo::before,
 .glitch.seo::after {
     content: "SEO";
 
 }
+
 .glitch.app::before,
 .glitch.app::after {
     content: "App Development";
 
 }
+
 .glitch.smm::before,
 .glitch.smm::after {
     content: "Social Media Marketing";
 
 }
+
 .glitch.sw::before,
 .glitch.sw::after {
     content: "Software Development";
@@ -147,19 +206,27 @@ nav {
     animation-iteration-count: infinite;
     animation-direction: reverse-alternate;
 }
+
 .glitch.web::before {
     animation-delay: 1s;
 
-}.glitch.seo::before {
+}
+
+.glitch.seo::before {
     animation-delay: 0.5s;
 
-}.glitch.app::before {
+}
+
+.glitch.app::before {
     animation-delay: 0.7s;
 
-}.glitch.sw::before {
+}
+
+.glitch.sw::before {
     animation-delay: 1.2s;
 
 }
+
 .glitch::after {
     left: -3px;
     text-shadow: -2px 0 blue;
@@ -170,19 +237,27 @@ nav {
     animation-iteration-count: infinite;
     animation-direction: reverse-alternate;
 }
+
 .glitch.web::after {
     animation-delay: 1s;
 
-}.glitch.seo::after {
+}
+
+.glitch.seo::after {
     animation-delay: 0.5s;
 
-}.glitch.app::after {
+}
+
+.glitch.app::after {
     animation-delay: 0.7s;
 
-}.glitch.sw::after {
+}
+
+.glitch.sw::after {
     animation-delay: 1.2s;
 
 }
+
 @keyframes glitch-animation-1 {
     0% {
         clip: rect(46px, 350px, 41px, 30px);
@@ -353,4 +428,17 @@ nav {
     100% {
         clip: rect(23px, 350px, 145px, 30px);
     }
+}
+
+#parallax {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 120vh;
+    background-image: url('../media/polygon/1.png'), url('../media/polygon/2.png'), url('../media/star.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: 50% 50%;
 }

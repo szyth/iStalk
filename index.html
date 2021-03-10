@@ -15,7 +15,8 @@
 </head>
 
 <body id="particles">
-    <div id="particles-js"></div>
+
+
     <nav class="transparent z-depth-0">
         <div class="container nav-wrapper">
             <a href="#" class="brand-logo"><img src="media/logo-obb.png" alt=""></a>
@@ -26,29 +27,36 @@
             </ul>
         </div>
     </nav>
-
+    <div id="parallax"></div>
+    <div id="particles-js"></div>
     <div class="">
         <div id="svg-container">
-            <!-- <div class="wrapper">
-                <h1 class="glitch">Glitch</h1>
-              </div> -->
+
             <div class="hit-area">
                 <div class="hitbox" id="nw">
-                    <h3 class="glitch web">Web Development</h3>
+
+                    <div class="star-wrapper"><i class="star"></i></div>
+                    <h3 class="glitch web">Web
+                        Development</h3>
                 </div>
                 <div class="hitbox" id="n">
+                    <div class="star-wrapper" style="transform:translate(-50%, -200%);"><i class="star"></i></div>
+
                     <h3 class="glitch seo" style="position: absolute;
                     left: 50%;
                     transform: translate(-50%, -50%);">SEO</h3>
                 </div>
                 <div class="hitbox" id="ne">
+                    <div class="star-wrapper"><i class="star"></i></div>
                     <h3 class="right glitch smm">Social Media Marketing</h3>
                 </div>
                 <div class="hitbox" id="w">
+                    <div class="star-wrapper"><i class="star"></i></div>
                     <h3 class="glitch sw">Software Development</h3c>
                 </div>
                 <div class="hitbox" id="cent"></div>
                 <div class="hitbox" id="e">
+                    <div class="star-wrapper"><i class="star"></i></div>
                     <h3 class="right glitch app" style="transform: translateX(40px);">App Development</h3>
                 </div>
                 <div class="hitbox" id="sw"></div>
@@ -63,8 +71,11 @@
                     <ellipse class="eye" cx="242.82" cy="198.85" rx="11.75" ry="9.32" />
                 </svg>
             </div>
-            <svg id="face" viewBox="0 0 369.51 433.72">
+            <svg id="face" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 369.51 433.72">
                 <defs>
+                    <style>
+                    </style>
                     <linearGradient id="linear-gradient" x1="6.51" y1="379.22" x2="38.11" y2="379.22"
                         gradientTransform="translate(-154.92 235.55) rotate(-59.51)" gradientUnits="userSpaceOnUse">
                         <stop offset="0" stop-color="#b2deff" />
@@ -90,7 +101,7 @@
                         gradientTransform="translate(1086.15 1391.25) rotate(-118.28)" xlink:href="#linear-gradient" />
                     <linearGradient id="linear-gradient-11" x1="1429.99" y1="-287.15" x2="1478.68" y2="-287.15"
                         gradientTransform="translate(1086.15 1391.25) rotate(-118.28)" xlink:href="#linear-gradient" />
-                    <linearGradient id="linear-gradient-12" x1="1477.8" y1="-259.67" x2="1626.99" y2="-259.67"
+                    <linearGradient id="linear-gradient-12" x1="1501.42" y1="-259.67" x2="1627" y2="-259.67"
                         gradientTransform="translate(1086.15 1391.25) rotate(-118.28)" xlink:href="#linear-gradient" />
                     <linearGradient id="linear-gradient-13" x1="269.85" y1="111.33" x2="351.7" y2="111.33"
                         xlink:href="#linear-gradient" />
@@ -131,8 +142,8 @@
                         xlink:href="#radial-gradient" />
                     <radialGradient id="radial-gradient-3" cx="22.39" cy="259.14" r="15.18"
                         gradientTransform="matrix(-1, 0.04, 0, -0.05, 327.96, 223.71)" xlink:href="#radial-gradient" />
-                    <radialGradient id="radial-gradient-4" cx="-40.57" cy="103.4" r="21.59"
-                        gradientTransform="matrix(0.04, 1, -0.05, 0, 311.84, 252.24)" xlink:href="#radial-gradient" />
+                    <radialGradient id="radial-gradient-4" cx="-51.7" cy="103.27" r="21.59"
+                        gradientTransform="matrix(0.04, 1, -0.05, 0, 311.96, 252.23)" xlink:href="#radial-gradient" />
                     <radialGradient id="radial-gradient-5" cx="212.31" cy="180.24" r="7.61"
                         gradientTransform="matrix(-0.74, -0.68, 0.03, -0.04, 328.4, 354.11)"
                         xlink:href="#radial-gradient" />
@@ -1821,7 +1832,7 @@
                             <polygon class="cls-11" points="87.76 304.49 200.34 306.94 159.47 210.9 87.76 304.49" />
                             <polygon class="cls-12" points="39.26 221.73 159.47 210.9 87.76 304.49 39.26 221.73" />
                             <polygon class="cls-13" points="159.47 210.9 219.47 223.08 87.76 304.49 159.47 210.9" />
-                            <polygon class="cls-14" points="82.29 110.32 159.47 210.9 102.06 73.47 82.29 110.32" />
+                            <polygon class="cls-14" points="82.29 110.32 145.02 192 102.06 73.47 82.29 110.32" />
                             <polygon class="cls-15" points="76.55 7 102.06 73.47 138.02 0.12 76.71 6.63 76.55 7" />
                             <polyline class="cls-16" points="314.14 243.51 369.32 351 251.99 317.61 314.14 243.51" />
                             <polyline class="cls-17" points="365.04 240.59 320.67 367.31 268.83 355.61 365.04 240.59" />
@@ -1843,7 +1854,7 @@
                             d="M289.5,212.58c0-.45,6.92-1.11,15.51-1.47s15.57-.3,15.59.15-6.93,1.11-15.52,1.47S289.52,213,289.5,212.58Z"
                             transform="translate(-59.23 -32.53)" />
                         <path class="cls-28"
-                            d="M306,234c-.64,0-1.57-9.85-2.09-22.06s-.42-22.14.22-22.16,1.58,9.85,2.09,22.06S306.62,234,306,234Z"
+                            d="M305.64,222.91c-.64,0-1.58-9.85-2.09-22.07s-.42-22.13.22-22.16,1.58,9.85,2.09,22.07S306.28,222.88,305.64,222.91Z"
                             transform="translate(-59.23 -32.53)" />
                         <path class="cls-29"
                             d="M172.33,198.65c.15-.16,2.85,2.07,6,5s5.62,5.42,5.47,5.58-2.85-2.06-6-5S172.18,198.82,172.33,198.65Z"
@@ -2380,30 +2391,18 @@
                             <polygon class="cls-320" points="101.29 197.87 115.54 192.69 107.55 197.3 101.29 197.87" />
                             <polygon class="cls-320" points="130.01 198.82 132.68 197.93 136.55 201.46 130.01 198.82" />
                             <polygon class="cls-320" points="132.68 197.93 137.31 199.13 136.55 201.46 132.68 197.93" />
-                            <polygon class="cls-320" points="137.31 199.13 142.15 202.57 136.55 201.46 137.31 199.13" />
-                            <polygon class="cls-320" points="137.31 199.13 141.06 190.54 146.37 197.34 137.31 199.13" />
-                            <polygon class="cls-320" points="137.31 199.13 142.15 202.57 146.37 197.34 137.31 199.13" />
-                            <polygon class="cls-320" points="141.06 190.54 142.43 189.61 146.37 197.34 141.06 190.54" />
-                            <polygon class="cls-320" points="142.43 189.61 146.84 188.24 146.37 197.34 142.43 189.61" />
-                            <polygon class="cls-320" points="160.66 194.43 164.77 202.3 146.37 197.34 160.66 194.43" />
                             <polygon class="cls-320" points="137.49 183.26 145.02 187.76 151.23 186.71 137.49 183.26" />
                             <polygon class="cls-320" points="137.49 183.26 147.59 141.27 151.23 186.71 137.49 183.26" />
                             <polygon class="cls-320" points="145.02 187.76 146.84 188.24 151.23 186.71 145.02 187.76" />
-                            <polygon class="cls-320" points="146.37 197.34 146.84 188.24 151.23 186.71 146.37 197.34" />
-                            <polygon class="cls-320" points="146.37 197.34 160.66 194.43 151.23 186.71 146.37 197.34" />
                             <polygon class="cls-320" points="151.23 186.71 147.59 141.27 156.17 185.94 151.23 186.71" />
                             <polygon class="cls-320" points="151.23 186.71 160.66 194.43 156.17 185.94 151.23 186.71" />
                             <polygon class="cls-320" points="147.59 141.27 198.29 181.31 166.06 189.73 147.59 141.27" />
                             <polygon class="cls-320" points="147.59 141.27 156.17 185.94 166.06 189.73 147.59 141.27" />
                             <polygon class="cls-320" points="156.17 185.94 160.66 194.43 166.06 189.73 156.17 185.94" />
                             <polygon class="cls-320" points="177.05 196.82 198.29 181.31 166.06 189.73 177.05 196.82" />
-                            <polygon class="cls-320" points="160.66 194.43 164.77 202.3 169.92 194.88 160.66 194.43" />
                             <polygon class="cls-320" points="160.66 194.43 166.06 189.73 169.92 194.88 160.66 194.43" />
                             <polygon class="cls-320" points="166.06 189.73 177.05 196.82 169.92 194.88 166.06 189.73" />
-                            <polygon class="cls-320" points="164.77 202.3 169.92 194.88 170.65 195.78 164.77 202.3" />
                             <polygon class="cls-320" points="169.92 194.88 177.05 196.82 170.65 195.78 169.92 194.88" />
-                            <polygon class="cls-320" points="164.77 202.3 168.72 211.97 175.2 199.58 164.77 202.3" />
-                            <polygon class="cls-320" points="164.77 202.3 170.65 195.78 175.2 199.58 164.77 202.3" />
                             <polygon class="cls-320" points="170.65 195.78 177.05 196.82 175.2 199.58 170.65 195.78" />
                             <polygon class="cls-320" points="168.72 211.97 175.2 199.58 180.77 200.37 168.72 211.97" />
                             <polygon class="cls-320" points="175.2 199.58 177.05 196.82 180.77 200.37 175.2 199.58" />
@@ -2413,15 +2412,9 @@
                             <polygon class="cls-320" points="177.05 196.82 198.29 181.31 184.12 201.68 177.05 196.82" />
                             <polygon class="cls-320" points="177.05 196.82 180.77 200.37 184.12 201.68 177.05 196.82" />
                             <polygon class="cls-320" points="191.92 225.23 214.76 193.57 184.12 201.68 191.92 225.23" />
-                            <polygon class="cls-320" points="164.77 202.3 168.72 211.97 165.81 210.13 164.77 202.3" />
                             <polygon class="cls-320" points="165.81 210.13 168.72 211.97 149.78 217.09 165.81 210.13" />
-                            <polygon class="cls-320" points="135.53 215.14 136.55 201.46 144.88 207.66 135.53 215.14" />
+                            <polyline class="cls-320" points="144.88 207.66 135.53 215.14 136.55 201.46" />
                             <polygon class="cls-320" points="135.53 215.14 149.78 217.09 144.88 207.66 135.53 215.14" />
-                            <polygon class="cls-320" points="136.55 201.46 142.15 202.57 144.88 207.66 136.55 201.46" />
-                            <polygon class="cls-320" points="142.15 202.57 146.37 197.34 144.88 207.66 142.15 202.57" />
-                            <polygon class="cls-320" points="146.37 197.34 164.77 202.3 144.88 207.66 146.37 197.34" />
-                            <polygon class="cls-320" points="149.78 217.09 165.81 210.13 144.88 207.66 149.78 217.09" />
-                            <polygon class="cls-320" points="164.77 202.3 165.81 210.13 144.88 207.66 164.77 202.3" />
                             <polygon class="cls-320" points="125.66 199.05 130.01 198.82 127.22 201.99 125.66 199.05" />
                             <polygon class="cls-320" points="130.01 198.82 136.55 201.46 127.22 201.99 130.01 198.82" />
                             <polygon class="cls-320" points="135.53 215.14 136.55 201.46 127.22 201.99 135.53 215.14" />
@@ -2430,40 +2423,19 @@
                             <polygon class="cls-320" points="198.29 181.31 240.62 123.78 227.1 188.73 198.29 181.31" />
                             <polygon class="cls-320" points="214.76 193.57 223.77 209.09 220.39 193.22 214.76 193.57" />
                             <polygon class="cls-320" points="214.76 193.57 227.1 188.73 220.39 193.22 214.76 193.57" />
-                            <polygon class="cls-320" points="246.59 202.16 253.81 197.95 255.81 203.92 246.59 202.16" />
-                            <polygon class="cls-320" points="238.53 200.63 246.59 202.16 240.63 202.38 238.53 200.63" />
                             <polygon class="cls-320" points="220.39 193.22 223.77 209.09 222.81 193.16 220.39 193.22" />
                             <polygon class="cls-320" points="220.39 193.22 227.1 188.73 222.81 193.16 220.39 193.22" />
                             <polygon class="cls-320" points="227.1 188.73 228.72 192.3 222.81 193.16 227.1 188.73" />
                             <polygon class="cls-320" points="227.1 188.73 228.72 192.3 239.95 184.17 227.1 188.73" />
                             <polygon class="cls-320" points="227.1 188.73 240.62 123.78 239.95 184.17 227.1 188.73" />
-                            <polygon class="cls-320" points="228.72 192.3 238.53 200.63 239.95 184.17 228.72 192.3" />
                             <polygon class="cls-320" points="240.62 123.78 249.87 182.94 239.95 184.17 240.62 123.78" />
-                            <polygon class="cls-320" points="238.53 200.63 239.95 184.17 248.54 186.14 238.53 200.63" />
-                            <polygon class="cls-320" points="238.53 200.63 246.59 202.16 248.54 186.14 238.53 200.63" />
                             <polygon class="cls-320" points="239.95 184.17 249.87 182.94 248.54 186.14 239.95 184.17" />
-                            <polygon class="cls-320" points="246.59 202.16 253.81 197.95 248.54 186.14 246.59 202.16" />
                             <polygon class="cls-320" points="249.87 182.94 260.92 194.24 248.54 186.14 249.87 182.94" />
-                            <polygon class="cls-320" points="253.81 197.95 260.92 194.24 248.54 186.14 253.81 197.95" />
                             <polygon class="cls-320" points="260.92 194.24 264.3 195.87 264.18 192.81 260.92 194.24" />
                             <polygon class="cls-320" points="264.3 195.87 264.18 192.81 277.07 195.84 264.3 195.87" />
-                            <polygon class="cls-320" points="253.81 197.95 255.81 203.92 258.96 201.21 253.81 197.95" />
-                            <polygon class="cls-320" points="253.81 197.95 260.92 194.24 258.96 201.21 253.81 197.95" />
-                            <polygon class="cls-320" points="256.31 211.15 255.81 203.92 258.96 201.21 256.31 211.15" />
                             <polygon class="cls-320" points="260.92 194.24 264.3 195.87 258.96 201.21 260.92 194.24" />
-                            <polygon class="cls-320" points="246.59 202.16 255.81 203.92 246.65 204.59 246.59 202.16" />
-                            <polygon class="cls-320" points="256.31 211.15 255.81 203.92 246.65 204.59 256.31 211.15" />
-                            <polygon class="cls-320" points="223.77 209.09 222.81 193.16 232.16 199.91 223.77 209.09" />
-                            <polygon class="cls-320" points="222.81 193.16 228.72 192.3 232.16 199.91 222.81 193.16" />
-                            <polygon class="cls-320" points="228.72 192.3 238.53 200.63 232.16 199.91 228.72 192.3" />
                             <polygon class="cls-320" points="222.74 245.89 223.77 209.09 241.42 203.93 222.74 245.89" />
-                            <polygon class="cls-320" points="222.74 245.89 256.31 211.15 241.42 203.93 222.74 245.89" />
-                            <polygon class="cls-320" points="223.77 209.09 232.16 199.91 241.42 203.93 223.77 209.09" />
-                            <polygon class="cls-320" points="232.16 199.91 238.53 200.63 241.42 203.93 232.16 199.91" />
-                            <polygon class="cls-320" points="238.53 200.63 240.63 202.38 241.42 203.93 238.53 200.63" />
-                            <polygon class="cls-320" points="240.63 202.38 246.59 202.16 241.42 203.93 240.63 202.38" />
-                            <polygon class="cls-320" points="246.65 204.59 246.59 202.16 241.42 203.93 246.65 204.59" />
-                            <polygon class="cls-320" points="246.65 204.59 256.31 211.15 241.42 203.93 246.65 204.59" />
+                            <polyline class="cls-320" points="241.42 203.93 222.74 245.89 256.31 211.15" />
                             <polygon class="cls-320" points="149.78 217.09 168.72 211.97 174.77 260.91 149.78 217.09" />
                             <polygon class="cls-320" points="169.07 271.13 180.44 275.28 174.77 260.91 169.07 271.13" />
                             <polygon class="cls-320" points="168.72 211.97 191.92 225.23 174.77 260.91 168.72 211.97" />
@@ -2561,8 +2533,6 @@
                             <polygon class="cls-320" points="122.31 201.3 127.22 201.99 119.21 204.65 122.31 201.3" />
                             <polygon class="cls-320" points="127.22 201.99 135.53 215.14 119.21 204.65 127.22 201.99" />
                         </g>
-                        <!-- <ellipse class="svg-eye" cx="153.45" cy="201.3" rx="11.75" ry="9.32" /> -->
-                        <!-- <ellipse class="svg-eye" cx="242.82" cy="198.85" rx="11.75" ry="9.32" /> -->
                     </g>
                 </g>
             </svg>
