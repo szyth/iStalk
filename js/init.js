@@ -4,50 +4,50 @@ $(".hitbox").hover(
     // console.log(this.id);
     if (this.id == "nw") {
       eyes.css({
-        "-webkit-transform": " translate(-5px, -5px)",
-        transform: " translate(-5px, -5px)",
+        "-webkit-transform": " translate(-2px, -2px)",
+        transform: " translate(-2px, -2px)",
       });
     }
     if (this.id == "n") {
       eyes.css({
-        "-webkit-transform": " translate(0, -5px)",
-        transform: " translate(0, -5px)",
+        "-webkit-transform": " translate(0, -2px)",
+        transform: " translate(0, -2px)",
       });
     }
     if (this.id == "ne") {
       eyes.css({
-        "-webkit-transform": " translate(5px, -5px)",
-        transform: " translate(5px, -5px)",
+        "-webkit-transform": " translate(2px, -2px)",
+        transform: " translate(2px, -2px)",
       });
     }
     if (this.id == "w") {
       eyes.css({
-        "-webkit-transform": " translate(-5px, 0)",
-        transform: " translate(-5px, 0)",
+        "-webkit-transform": " translate(-2px, 0)",
+        transform: " translate(-2px, 0)",
       });
     }
     if (this.id == "e") {
       eyes.css({
-        "-webkit-transform": " translate(5px, 0)",
-        transform: " translate(5px, 0)",
+        "-webkit-transform": " translate(2px, 0)",
+        transform: " translate(2px, 0)",
       });
     }
     if (this.id == "sw") {
       eyes.css({
-        "-webkit-transform": " translate(-5px, 5px)",
-        transform: " translate(-5px, 5px)",
+        "-webkit-transform": " translate(-2px, 2px)",
+        transform: " translate(-2px, 2px)",
       });
     }
     if (this.id == "s") {
       eyes.css({
-        "-webkit-transform": " translate(0, 5px)",
-        transform: " translate(0, 5px)",
+        "-webkit-transform": " translate(0, 2px)",
+        transform: " translate(0, 2px)",
       });
     }
     if (this.id == "se") {
       eyes.css({
-        "-webkit-transform": " translate(5px, 5px)",
-        transform: " translate(5px, 5px)",
+        "-webkit-transform": " translate(2px, 2px)",
+        transform: " translate(2px, 2px)",
       });
     }
   },

@@ -31,16 +31,18 @@ nav {
 #svg-container {
     position: relative;
     top: 10%;
-    width: 75%;
+    width: 100%;
     left: 50%;
     transform: translateX(-50%);
     min-height: 100vh;
 }
+
 @media only screen and (max-width: 601px) {
     #svg-container {
         width: 100%;
     }
 }
+
 .hit-area {
     position: absolute;
     left: 50%;
@@ -57,7 +59,12 @@ nav {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    z-index: 99999;
+    z-index: 999999;
+}
+
+#moon path {
+    filter: drop-shadow(0rem 0rem 1rem rgb(255, 255, 255))drop-shadow(0rem 0rem 1rem rgb(255, 255, 255));
+
 }
 
 #face {
@@ -67,7 +74,13 @@ nav {
     top: 50%;
     transform: translate(-50%, -50%);
 }
-
+#pupil{
+    position: absolute;
+    z-index: 9;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
 .svg-eye {
     fill: #ffffff;
     position: absolute;
@@ -108,7 +121,7 @@ h3.glitch {
 }
 
 .eye {
-    transition: transform 1s ease;
+    transition: transform 0.2s ease;
 }
 
 
