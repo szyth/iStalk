@@ -36,7 +36,11 @@ nav {
     transform: translateX(-50%);
     min-height: 100vh;
 }
-
+@media only screen and (max-width: 601px) {
+    #svg-container {
+        width: 100%;
+    }
+}
 .hit-area {
     position: absolute;
     left: 50%;
